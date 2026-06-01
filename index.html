@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="htmlRoot">
+<head>
+    <link rel="icon" type="image/png" href="favicon.png?v=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#050d1a">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Vanguard Code — نبني المستقبل الرقمي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cairo:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+ 
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#services" class="mob-link" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
+  <a href="#portfolio" class="mob-link" data-ar="أعمالنا" data-en="Portfolio">أعمالنا</a>
+  <a href="#why" class="mob-link" data-ar="لماذا نحن" data-en="Why Us">لماذا نحن</a>
+  <a href="#process" class="mob-link" data-ar="آلية العمل" data-en="Process">آلية العمل</a>
+  <a href="#contact" class="mob-link" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+</div>
+ 
+<!-- NAV -->
+<nav>
+  <div class="nav-left">
+    <a class="logo" href="#">Vanguard <span>Code</span></a>
+  </div>
+  <ul>
+    <li><a href="#services" class="t" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
+    <li><a href="#portfolio" class="t" data-ar="أعمالنا" data-en="Portfolio">أعمالنا</a></li>
+    <li><a href="#why" class="t" data-ar="لماذا نحن" data-en="Why Us">لماذا نحن</a></li>
+    <li><a href="#process" class="t" data-ar="آلية العمل" data-en="Process">آلية العمل</a></li>
+    <li><a href="#contact" class="t" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="lang-btn" id="langToggle">
+      <span class="lang-icon">🌐</span>
+      <span id="langLabel">EN</span>
+    </button>
+    <button class="nav-cta t" data-ar="اطلب استشارة" data-en="Free Consultation" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">اطلب استشارة</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+ 
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge t" data-ar="PREMIUM DIGITAL STUDIO — CAIRO" data-en="PREMIUM DIGITAL STUDIO — CAIRO">PREMIUM DIGITAL STUDIO — CAIRO</div>
+    <h1 class="hero-title">
+      <span class="t" data-ar="نحن لا نصمم واجهات فقط" data-en="We Don't Just Design Interfaces">نحن لا نصمم واجهات فقط</span><br>
+      <span class="line-gold t" data-ar="نبني المستقبل الرقمي" data-en="We Build Your Digital Future">نبني المستقبل الرقمي</span><br>
+      <span class="t" data-ar="لعملك" data-en=""></span>
+    </h1>
+    <p class="hero-sub t" data-ar="Crafting Premium Digital Experiences that Convert" data-en="Crafting Premium Digital Experiences that Convert">Crafting Premium Digital Experiences that Convert</p>
+    <div class="hero-btns">
+      <button class="btn-primary t" data-ar="ابدأ مشروعك معنا ←" data-en="Start Your Project →" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">ابدأ مشروعك معنا ←</button>
+      <button class="btn-secondary t" data-ar="استعرض أعمالنا" data-en="View Our Work" onclick="document.querySelector('#portfolio').scrollIntoView({behavior:'smooth'})">استعرض أعمالنا</button>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num" data-count="40">0</div><div class="stat-label t" data-ar="مشروع منجز" data-en="Projects Done">مشروع منجز</div></div>
+      <div><div class="stat-num" data-count="98">0</div><div class="stat-label t" data-ar="% رضا العملاء" data-en="% Client Satisfaction">% رضا العملاء</div></div>
+      <div><div class="stat-num" data-count="3">0</div><div class="stat-label t" data-ar="سنوات خبرة" data-en="Years Experience">سنوات خبرة</div></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header reveal">
+    <div class="section-tag">WHAT WE DO</div>
+    <h2 class="section-title t" data-ar="خدماتنا المتكاملة" data-en="Our Full Services">خدماتنا المتكاملة</h2>
+    <p class="section-desc t" data-ar="نقدم حلولاً رقمية فاخرة مبنية على فهم عميق لأهداف عملك وهوية علامتك التجارية." data-en="We deliver premium digital solutions built on a deep understanding of your business goals and brand identity.">نقدم حلولاً رقمية فاخرة مبنية على فهم عميق لأهداف عملك وهوية علامتك التجارية.</p>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-icon">✦</div>
+      <div class="service-name t" data-ar="تصميم واجهات المستخدم" data-en="UI/UX Design">تصميم واجهات المستخدم</div>
+      <p class="service-desc t" data-ar="تصاميم UI/UX مخصصة بالكامل لمواقعك وتطبيقاتك ولوحات التحكم التفاعلية. نعمل على Figma بنظام تصميم متكامل." data-en="Fully custom UI/UX designs for your websites, apps, and interactive dashboards. We deliver complete Figma design systems.">تصاميم UI/UX مخصصة بالكامل لمواقعك وتطبيقاتك ولوحات التحكم التفاعلية. نعمل على Figma بنظام تصميم متكامل.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-icon">⬡</div>
+      <div class="service-name t" data-ar="تطوير المواقع والبرمجة" data-en="Web Development">تطوير المواقع والبرمجة</div>
+      <p class="service-desc t" data-ar="تحويل تصاميمنا إلى كود نظيف وأداء عالٍ. نتعاون مع أفضل المطورين لضمان منتج نهائي متكامل ومتجاوب." data-en="Turning our designs into clean, high-performance code. We partner with top developers to deliver a fully responsive final product.">تحويل تصاميمنا إلى كود نظيف وأداء عالٍ. نتعاون مع أفضل المطورين لضمان منتج نهائي متكامل ومتجاوب.</p>
+      <div class="badge-soon">COMING SOON</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-icon">◈</div>
+      <div class="service-name t" data-ar="هوية بصرية وبراندينج" data-en="Branding & Visual Identity">هوية بصرية وبراندينج</div>
+      <p class="service-desc t" data-ar="بناء هوية بصرية قوية ومتماسكة من شعار وألوان وأنماط تحمل شخصية علامتك التجارية وتميّزها في السوق." data-en="Building a strong, cohesive visual identity — logo, colors, and patterns — that embodies your brand and stands out in the market.">بناء هوية بصرية قوية ومتماسكة من شعار وألوان وأنماط تحمل شخصية علامتك التجارية وتميّزها في السوق.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="section-header reveal">
+    <div class="section-tag">OUR WORK</div>
+    <h2 class="section-title t" data-ar="معرض الأعمال" data-en="Portfolio">معرض الأعمال</h2>
+    <p class="section-desc t" data-ar="نماذج تصميمية مميزة تعكس قدراتنا في تقديم تجارب بصرية فاخرة لمختلف المجالات." data-en="Distinctive design concepts that reflect our ability to deliver premium visual experiences across industries.">نماذج تصميمية مميزة تعكس قدراتنا في تقديم تجارب بصرية فاخرة لمختلف المجالات.</p>
+  </div>
+  <div class="portfolio-filters reveal">
+    <button class="filter-btn active t" data-ar="الكل" data-en="All">الكل</button>
+    <button class="filter-btn t" data-ar="متاجر إلكترونية" data-en="E-Commerce">متاجر إلكترونية</button>
+    <button class="filter-btn t" data-ar="مواقع شركات" data-en="Corporate Sites">مواقع شركات</button>
+    <button class="filter-btn t" data-ar="لوحات تحكم" data-en="Dashboards">لوحات تحكم</button>
+  </div>
+  <div class="portfolio-grid reveal">
+    <div class="portfolio-item large">
+      <div class="portfolio-visual theme-realestate">
+        <div class="mock-ui">
+          <div class="mock-nav"><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div></div>
+          <div style="width:40%;height:8px;border-radius:4px;background:linear-gradient(90deg,#c8a84b,#8a6520);margin-bottom:.5rem"></div>
+          <div class="mock-bar" style="width:65%;margin-bottom:.3rem"></div>
+          <div class="mock-bar" style="width:50%;margin-bottom:1.5rem"></div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;flex:1">
+            <div style="background:rgba(200,168,75,.15);border-radius:4px;aspect-ratio:1"></div>
+            <div style="background:rgba(200,168,75,.08);border-radius:4px;aspect-ratio:1"></div>
+            <div style="background:rgba(200,168,75,.12);border-radius:4px;aspect-ratio:1"></div>
+          </div>
+          <div style="position:absolute;top:2rem;right:2rem;font-family:'Playfair Display',serif;font-size:2rem;color:rgba(200,168,75,.4);font-weight:900">LUXE ESTATES</div>
+        </div>
+      </div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag t" data-ar="CONCEPT — موقع عقارات" data-en="CONCEPT — Real Estate">CONCEPT — موقع عقارات</div>
+        <div class="portfolio-name t" data-ar="Luxe Estates — وجهة العقار الفاخر" data-en="Luxe Estates — Premium Real Estate">Luxe Estates — وجهة العقار الفاخر</div>
+        <a href="#" class="portfolio-link t" data-ar="عرض النموذج التفاعلي" data-en="View Interactive Prototype">عرض النموذج التفاعلي</a>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-visual theme-watch">
+        <div class="mock-ui">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+            <div style="width:90px;height:90px;border-radius:50%;border:2px solid rgba(200,200,200,.3);display:flex;align-items:center;justify-content:center">
+              <div style="width:60px;height:60px;border-radius:50%;background:rgba(255,255,255,.05);border:1px solid rgba(200,200,200,.15)"></div>
+            </div>
+          </div>
+          <div style="position:absolute;bottom:2rem;left:0;right:0;text-align:center;font-family:'Playfair Display',serif;font-size:1.1rem;color:rgba(255,255,255,.25)">CHRONOS</div>
+        </div>
+      </div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag t" data-ar="CONCEPT — متجر ساعات فاخرة" data-en="CONCEPT — Luxury Watch Store">CONCEPT — متجر ساعات فاخرة</div>
+        <div class="portfolio-name">Chronos</div>
+        <a href="#" class="portfolio-link t" data-ar="عرض النموذج التفاعلي" data-en="View Interactive Prototype">عرض النموذج التفاعلي</a>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-visual theme-saas">
+        <div class="mock-ui">
+          <div class="mock-nav"><div class="mock-dot"></div><div class="mock-dot"></div></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px">
+            <div style="background:rgba(200,168,75,.12);border-radius:4px;height:30px;display:flex;align-items:center;padding:0 8px"><div style="width:60%;height:4px;background:var(--gold);border-radius:2px;opacity:.5"></div></div>
+            <div style="background:rgba(74,143,255,.12);border-radius:4px;height:30px"></div>
+          </div>
+          <div style="background:rgba(255,255,255,.03);border-radius:4px;flex:1;padding:8px">
+            <div style="display:flex;gap:4px;align-items:flex-end;height:100%">
+              <div style="flex:1;background:rgba(200,168,75,.25);border-radius:2px 2px 0 0;height:60%"></div>
+              <div style="flex:1;background:rgba(74,143,255,.25);border-radius:2px 2px 0 0;height:80%"></div>
+              <div style="flex:1;background:rgba(200,168,75,.25);border-radius:2px 2px 0 0;height:40%"></div>
+              <div style="flex:1;background:rgba(74,143,255,.25);border-radius:2px 2px 0 0;height:90%"></div>
+              <div style="flex:1;background:rgba(200,168,75,.25);border-radius:2px 2px 0 0;height:55%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag t" data-ar="CONCEPT — لوحة تحكم SaaS" data-en="CONCEPT — SaaS Dashboard">CONCEPT — لوحة تحكم SaaS</div>
+        <div class="portfolio-name">Analytics Pro Dashboard</div>
+        <a href="#" class="portfolio-link t" data-ar="عرض النموذج التفاعلي" data-en="View Interactive Prototype">عرض النموذج التفاعلي</a>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-visual theme-ecom">
+        <div class="mock-ui">
+          <div class="mock-nav"><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div></div>
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:4px">
+            <div style="background:rgba(155,89,182,.15);border-radius:4px;aspect-ratio:3/4;display:flex;align-items:flex-end;padding:6px"><div style="width:100%;height:4px;background:rgba(155,89,182,.4);border-radius:2px"></div></div>
+            <div style="background:rgba(231,76,60,.1);border-radius:4px;aspect-ratio:3/4;display:flex;align-items:flex-end;padding:6px"><div style="width:80%;height:4px;background:rgba(231,76,60,.4);border-radius:2px"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag t" data-ar="CONCEPT — متجر إلكتروني" data-en="CONCEPT — E-Commerce">CONCEPT — متجر إلكتروني</div>
+        <div class="portfolio-name t" data-ar="Nova Store — تجربة تسوق فريدة" data-en="Nova Store — Unique Shopping Experience">Nova Store — تجربة تسوق فريدة</div>
+        <a href="#" class="portfolio-link t" data-ar="عرض النموذج التفاعلي" data-en="View Interactive Prototype">عرض النموذج التفاعلي</a>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- WHY -->
+<section id="why">
+  <div class="why-grid">
+    <div class="reveal">
+      <div class="section-tag">WHY VANGUARD</div>
+      <h2 class="section-title t" data-ar="ما الذي يجعلنا مختلفين؟" data-en="What Makes Us Different?">ما الذي يجعلنا مختلفين؟</h2>
+      <p class="section-desc t" data-ar="لسنا مجرد مصممين نضع شاشات جميلة. نحن شركاء نجاح رقميين نفكر بمنطق الأعمال ونصنع تجارب تحوّل الزوار إلى عملاء." data-en="We're not just designers putting pretty screens together. We're digital success partners who think in business logic and craft experiences that turn visitors into clients.">لسنا مجرد مصممين نضع شاشات جميلة. نحن شركاء نجاح رقميين نفكر بمنطق الأعمال ونصنع تجارب تحوّل الزوار إلى عملاء.</p>
+      <div class="why-numbers">
+        <div class="why-num-box"><div class="why-big">100%</div><div class="why-label t" data-ar="تصاميم مخصصة" data-en="Custom Designs">تصاميم مخصصة</div></div>
+        <div class="why-num-box"><div class="why-big">48h</div><div class="why-label t" data-ar="أول عرض أولي" data-en="First Draft">أول عرض أولي</div></div>
+        <div class="why-num-box"><div class="why-big">∞</div><div class="why-label t" data-ar="تعديلات مجانية" data-en="Free Revisions">تعديلات مجانية</div></div>
+        <div class="why-num-box"><div class="why-big">A+</div><div class="why-label t" data-ar="ملفات Figma منظمة" data-en="Organized Figma Files">ملفات Figma منظمة</div></div>
+      </div>
+    </div>
+    <div class="why-visual reveal">
+      <div class="why-inner">
+        <div class="why-feature"><div class="why-icon">◈</div><div><div class="why-feat-title t" data-ar="فخامة بصرية لا تُنسى" data-en="Unforgettable Visual Luxury">فخامة بصرية لا تُنسى</div><p class="why-feat-desc t" data-ar="تصاميم مخصصة 100% تناسب هوية براندك. لا قوالب مستهلكة، كل مشروع يُعامَل كعمل فني فريد." data-en="100% custom designs that match your brand identity. No overused templates — every project is treated as a unique work of art.">تصاميم مخصصة 100% تناسب هوية براندك. لا قوالب مستهلكة، كل مشروع يُعامَل كعمل فني فريد.</p></div></div>
+        <div class="why-feature"><div class="why-icon">⬡</div><div><div class="why-feat-title t" data-ar="تسليم منظم — Design System" data-en="Structured Delivery — Design System">تسليم منظم — Design System</div><p class="why-feat-desc t" data-ar="نسلّم ملفات Figma بنظام تصميم كامل يجعل عملية التكويد أسرع بـ60% وبدون أخطاء في التفسير." data-en="We deliver Figma files with a complete design system, making coding 60% faster and error-free.">نسلّم ملفات Figma بنظام تصميم كامل يجعل عملية التكويد أسرع بـ60% وبدون أخطاء في التفسير.</p></div></div>
+        <div class="why-feature"><div class="why-icon">✦</div><div><div class="why-feat-title t" data-ar="تفكير UX يزيد المبيعات" data-en="UX Thinking That Drives Sales">تفكير UX يزيد المبيعات</div><p class="why-feat-desc t" data-ar="نصمم رحلة المستخدم بعناية لتقليل معدل الارتداد وزيادة معدل التحويل." data-en="We carefully design the user journey to reduce bounce rates and increase conversions.">نصمم رحلة المستخدم بعناية لتقليل معدل الارتداد وزيادة معدل التحويل.</p></div></div>
+        <div class="why-feature"><div class="why-icon">▲</div><div><div class="why-feat-title t" data-ar="شفافية كاملة في التواصل" data-en="Full Transparency">شفافية كاملة في التواصل</div><p class="why-feat-desc t" data-ar="تحديثات منتظمة، نسخ تفاعلية للمراجعة قبل التسليم النهائي، ولا مفاجآت في الأسعار أو المواعيد." data-en="Regular updates, interactive prototypes for review before final delivery, and no surprises in pricing or timelines.">تحديثات منتظمة، نسخ تفاعلية للمراجعة قبل التسليم النهائي، ولا مفاجآت في الأسعار أو المواعيد.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-header reveal" style="text-align:center;margin:0 auto 4rem;">
+    <div class="section-tag" style="justify-content:center">OUR PROCESS</div>
+    <h2 class="section-title t" data-ar="كيف نعمل معاً؟" data-en="How We Work Together">كيف نعمل معاً؟</h2>
+    <p class="section-desc t" style="margin:0 auto" data-ar="أربع مراحل واضحة تضمن لك مشروعاً متكاملاً يتجاوز توقعاتك." data-en="Four clear phases that guarantee a complete project exceeding your expectations.">أربع مراحل واضحة تضمن لك مشروعاً متكاملاً يتجاوز توقعاتك.</p>
+  </div>
+  <div class="process-timeline reveal">
+    <div class="process-line"></div>
+    <div class="process-step">
+      <div class="step-content">
+        <div class="step-name t" data-ar="الاستكشاف والفهم" data-en="Discovery & Understanding">الاستكشاف والفهم</div>
+        <p class="step-desc t" data-ar="نبدأ بجلسة مكثفة لفهم فكرتك وأهداف عملك وجمهورك المستهدف والمنافسين." data-en="We start with an intensive session to understand your idea, business goals, target audience, and competitors.">نبدأ بجلسة مكثفة لفهم فكرتك وأهداف عملك وجمهورك المستهدف والمنافسين.</p>
+        <div class="step-tags"><span class="step-tag">DISCOVERY</span><span class="step-tag">BRIEF</span><span class="step-tag">RESEARCH</span></div>
+      </div>
+      <div class="step-marker">١</div>
+    </div>
+    <div class="process-step">
+      <div class="step-content">
+        <div class="step-name t" data-ar="التخطيط والهيكلة" data-en="Planning & Wireframing">التخطيط والهيكلة</div>
+        <p class="step-desc t" data-ar="نرسم الهيكل التجريبي لكل صفحة ونضع خريطة رحلة المستخدم قبل لمس أي لون." data-en="We sketch wireframes for every page and map the user journey before touching any color.">نرسم الهيكل التجريبي لكل صفحة ونضع خريطة رحلة المستخدم قبل لمس أي لون.</p>
+        <div class="step-tags"><span class="step-tag">WIREFRAMES</span><span class="step-tag">USER FLOW</span><span class="step-tag">IA</span></div>
+      </div>
+      <div class="step-marker">٢</div>
+    </div>
+    <div class="process-step">
+      <div class="step-content">
+        <div class="step-name t" data-ar="التصميم البصري الفاخر" data-en="Premium Visual Design">التصميم البصري الفاخر</div>
+        <p class="step-desc t" data-ar="نضع اللمسة الجمالية الكاملة: الألوان، الخطوط، التباعد، والتفاصيل الدقيقة." data-en="We apply the full aesthetic treatment: colors, typography, spacing, and the fine details that make it look premium.">نضع اللمسة الجمالية الكاملة: الألوان، الخطوط، التباعد، والتفاصيل الدقيقة.</p>
+        <div class="step-tags"><span class="step-tag">UI DESIGN</span><span class="step-tag">TYPOGRAPHY</span><span class="step-tag">BRAND</span></div>
+      </div>
+      <div class="step-marker">٣</div>
+    </div>
+    <div class="process-step">
+      <div class="step-content">
+        <div class="step-name t" data-ar="التفاعل والتسليم" data-en="Prototype & Handoff">التفاعل والتسليم</div>
+        <p class="step-desc t" data-ar="نرسل لك نموذجاً تفاعلياً حياً قبل الاعتماد النهائي، ثم نسلّم ملفات Figma منظمة وجاهزة للتكويد." data-en="We send you a live interactive prototype before final approval, then deliver organized Figma files ready for development.">نرسل لك نموذجاً تفاعلياً حياً قبل الاعتماد النهائي، ثم نسلّم ملفات Figma منظمة وجاهزة للتكويد.</p>
+        <div class="step-tags"><span class="step-tag">PROTOTYPE</span><span class="step-tag">REVIEW</span><span class="step-tag">HANDOFF</span></div>
+      </div>
+      <div class="step-marker">٤</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header reveal" style="text-align:center;margin:0 auto 4rem;">
+    <div class="section-tag" style="justify-content:center">GET IN TOUCH</div>
+    <h2 class="section-title t" data-ar="ابدأ مشروعك اليوم" data-en="Start Your Project Today">ابدأ مشروعك اليوم</h2>
+    <p class="section-desc t" style="margin:0 auto" data-ar="استشارة مجانية لا تلزمك بشيء. أخبرنا عن فكرتك وسنعود إليك خلال 24 ساعة." data-en="A free consultation with no strings attached. Tell us your idea and we'll get back to you within 24 hours.">استشارة مجانية لا تلزمك بشيء. أخبرنا عن فكرتك وسنعود إليك خلال 24 ساعة.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="contact-item"><div class="contact-icon">✦</div><div><div class="contact-label t" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</div><div class="contact-value">vanguardcode936@gmail.com</div></div></div>
+      <div class="contact-item"><div class="contact-icon">◈</div><div><div class="contact-label t" data-ar="واتساب / تيليجرام" data-en="WhatsApp / Telegram">واتساب / تيليجرام</div><div class="contact-value">+20 100 000 0000</div></div></div>
+      <div class="contact-item"><div class="contact-icon">⬡</div><div><div class="contact-label t" data-ar="ساعات العمل" data-en="Working Hours">ساعات العمل</div><div class="contact-value t" data-ar="السبت – الخميس · 10ص – 8م" data-en="Sat – Thu · 10AM – 8PM">السبت – الخميس · 10ص – 8م</div></div></div>
+      <div class="contact-item"><div class="contact-icon">▲</div><div><div class="contact-label t" data-ar="متوسط وقت الرد" data-en="Average Response Time">متوسط وقت الرد</div><div class="contact-value t" data-ar="أقل من 4 ساعات عمل" data-en="Under 4 business hours">أقل من 4 ساعات عمل</div></div></div>
+    </div>
+    <div class="contact-form reveal">
+      <div class="form-row">
+        <div class="form-group"><label class="form-label t" data-ar="الاسم الكريم" data-en="Full Name">الاسم الكريم</label><input class="form-input" type="text" id="fname" placeholder="محمد أحمد"></div>
+        <div class="form-group"><label class="form-label t" data-ar="البريد الإلكتروني" data-en="Email Address">البريد الإلكتروني</label><input class="form-input" type="email" id="femail" placeholder="name@company.com"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label t" data-ar="رابط شركتك الحالية" data-en="Current Website (optional)">رابط شركتك الحالية</label><input class="form-input" type="url" id="fsiteurl" placeholder="www.yoursite.com"></div>
+        <div class="form-group">
+          <label class="form-label t" data-ar="الميزانية المتوقعة" data-en="Expected Budget">الميزانية المتوقعة</label>
+          <select class="form-select form-input" id="fbudget">
+            <option value="" class="t" data-ar="اختر النطاق" data-en="Select Range">اختر النطاق</option>
+            <option>أقل من $500</option><option>$500 – $1,500</option><option>$1,500 – $3,000</option><option>$3,000 – $5,000</option><option>أكثر من $5,000</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label t" data-ar="نوع المشروع" data-en="Project Type">نوع المشروع</label>
+        <select class="form-select form-input" id="ftype">
+          <option value="" class="t" data-ar="اختر نوع المشروع" data-en="Select Project Type">اختر نوع المشروع</option>
+          <option class="t" data-ar="موقع شركة / خدمات" data-en="Corporate / Services Website">موقع شركة / خدمات</option>
+          <option class="t" data-ar="متجر إلكتروني" data-en="E-Commerce Store">متجر إلكتروني</option>
+          <option class="t" data-ar="تطبيق موبايل" data-en="Mobile App">تطبيق موبايل</option>
+          <option class="t" data-ar="لوحة تحكم / SaaS" data-en="Dashboard / SaaS">لوحة تحكم / SaaS</option>
+          <option class="t" data-ar="هوية بصرية" data-en="Visual Identity">هوية بصرية</option>
+          <option class="t" data-ar="أخرى" data-en="Other">أخرى</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label t" data-ar="تفاصيل المشروع" data-en="Project Details">تفاصيل المشروع</label>
+        <textarea class="form-textarea" id="fmessage" placeholder="أخبرنا عن فكرتك..."></textarea>
+      </div>
+      <div class="form-success" id="formSuccess">✦ &nbsp; <span class="t" data-ar="شكراً! تم استلام طلبك وسنتواصل معك خلال 24 ساعة." data-en="Thank you! Your request has been received. We'll be in touch within 24 hours.">شكراً! تم استلام طلبك وسنتواصل معك خلال 24 ساعة.</span></div>
+      <button class="btn-submit t" id="submitBtn" data-ar="إرسال الطلب ←" data-en="Send Request →">إرسال الطلب ←</button>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Vanguard Code</div>
+  <div class="footer-copy t" data-ar="© 2025 Vanguard Code. جميع الحقوق محفوظة." data-en="© 2025 Vanguard Code. All rights reserved.">© 2025 Vanguard Code. جميع الحقوق محفوظة.</div>
+  <div class="footer-links">
+    <a href="#" class="t" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a>
+    <a href="#" class="t" data-ar="الشروط والأحكام" data-en="Terms & Conditions">الشروط والأحكام</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
