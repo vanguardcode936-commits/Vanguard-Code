@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <title>Vanguard Code — نبني المستقبل الرقمي</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanguard Code — نبني المستقبل الرقمي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cairo:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="logo" href="#">Vanguard <span>Code</span></a>
+  <ul>
+    <li><a href="#services">خدماتنا</a></li>
+    <li><a href="#portfolio">أعمالنا</a></li>
+    <li><a href="#why">لماذا نحن</a></li>
+    <li><a href="#process">آلية العمل</a></li>
+    <li><a href="#contact">تواصل معنا</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">اطلب استشارة</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">PREMIUM DIGITAL STUDIO — CAIRO</div>
+    <h1 class="hero-title">
+      نحن لا نصمم واجهات فقط<br>
+      <span class="line-gold">نبني المستقبل الرقمي</span><br>
+      لعملك
+    </h1>
+    <p class="hero-sub">Crafting Premium Digital Experiences that Convert</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">ابدأ مشروعك معنا ←</button>
+      <button class="btn-secondary" onclick="document.querySelector('#portfolio').scrollIntoView({behavior:'smooth'})">استعرض أعمالنا</button>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num" data-count="40">0</div><div class="stat-label">مشروع منجز</div></div>
+      <div><div class="stat-num" data-count="98">0</div><div class="stat-label">% رضا العملاء</div></div>
+      <div><div class="stat-num" data-count="2">0</div><div class="stat-label">سنوات خبرة</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header reveal">
+    <div class="section-tag">WHAT WE DO</div>
+    <h2 class="section-title">خدماتنا المتكاملة</h2>
+    <p class="section-desc">نقدم حلولاً رقمية فاخرة مبنية على فهم عميق لأهداف عملك وهوية علامتك التجارية.</p>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-icon">✦</div>
+      <div class="service-name">تصميم واجهات المستخدم</div>
+      <p class="service-desc">تصاميم UI/UX مخصصة بالكامل لمواقعك وتطبيقاتك ولوحات التحكم التفاعلية. نعمل على Figma بنظام تصميم متكامل.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-icon">⬡</div>
+      <div class="service-name">تطوير المواقع والبرمجة</div>
+      <p class="service-desc">تحويل تصاميمنا إلى كود نظيف وأداء عالٍ. نتعاون مع أفضل المطورين لضمان منتج نهائي متكامل ومتجاوب.</p>
+      <div class="badge-soon">COMING SOON</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-icon">◈</div>
+      <div class="service-name">هوية بصرية وبراندينج</div>
+      <p class="service-desc">بناء هوية بصرية قوية ومتماسكة من شعار وألوان وأنماط تحمل شخصية علامتك التجارية وتميّزها في السوق.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="section-header reveal">
+    <div class="section-tag">OUR WORK(wireframe)</div>
+    <h2 class="section-title">معرض الأعمال</h2>
+    <p class="section-desc">نماذج تصميمية مميزة تعكس قدراتنا في تقديم تجارب بصرية فاخرة لمختلف المجالات.</p>
+  </div>
+  <div class="portfolio-filters reveal">
+    <button class="filter-btn active">الكل</button>
+    <button class="filter-btn">متاجر إلكترونية</button>
+    <button class="filter-btn">مواقع شركات</button>
+    <button class="filter-btn">لوحات تحكم</button>
+  </div>
+  <div class="portfolio-grid reveal">
+    <div class="portfolio-item large">
+      <div class="portfolio-visual theme-realestate">
+        <div class="mock-ui">
+          <div class="mock-nav"><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div></div>
+          <div class="mock-bar" style="width:40%;height:8px;border-radius:4px;background:linear-gradient(90deg,#c8a84b,#8a6520);margin-bottom:0.5rem"></div>
+          <div class="mock-bar" style="width:65%;margin-bottom:0.3rem"></div>
+          <div class="mock-bar" style="width:50%;margin-bottom:1.5rem"></div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;flex:1">
+            <div style="background:rgba(200,168,75,0.15);border-radius:4px;aspect-ratio:1"></div>
+            <div style="background:rgba(200,168,75,0.08);border-radius:4px;aspect-ratio:1"></div>
+            <div style="background:rgba(200,168,75,0.12);border-radius:4px;aspect-ratio:1"></div>
+          </div>
+          <div style="position:absolute;top:2rem;right:2rem;font-family:'Playfair Display',serif;font-size:2rem;color:rgba(200,168,75,0.4);font-weight:900">LUXE ESTATES</div>
+        </div>
+      </div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">CONCEPT — موقع عقارات</div>
+        <div class="portfolio-name">Luxe Estates — وجهة العقار الفاخر</div>
+        <a href="#" class="portfolio-link">عرض النموذج التفاعلي </a>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-visual theme-watch">
+        <div class="mock-ui">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+            <div style="width:90px;height:90px;border-radius:50%;border:2px solid rgba(200,200,200,0.3);display:flex;align-items:center;justify-content:center">
+              <div style="width:60px;height:60px;border-radius:50%;background:rgba(255,255,255,0.05);border:1px solid rgba(200,200,200,0.15)"></div>
+            </div>
+          </div>
+          <div style="position:absolute;bottom:2rem;left:0;right:0;text-align:center;font-family:'Playfair Display',serif;font-size:1.1rem;color:rgba(255,255,255,0.25)">CHRONOS</div>
+        </div>
+      </div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">CONCEPT — متجر ساعات فاخرة</div>
+        <div class="portfolio-name">Chronos — متجر الفخامة</div>
+        <a href="#" class="portfolio-link">عرض النموذج التفاعلي </a>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-visual theme-saas">
+        <div class="mock-ui">
+          <div class="mock-nav"><div class="mock-dot"></div><div class="mock-dot"></div></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px">
+            <div style="background:rgba(200,168,75,0.12);border-radius:4px;height:30px;display:flex;align-items:center;padding:0 8px">
+              <div style="width:60%;height:4px;background:var(--gold);border-radius:2px;opacity:0.5"></div>
+            </div>
+            <div style="background:rgba(74,143,255,0.12);border-radius:4px;height:30px"></div>
+          </div>
+          <div style="background:rgba(255,255,255,0.03);border-radius:4px;flex:1;padding:8px">
+            <div style="display:flex;gap:4px;align-items:flex-end;height:100%">
+              <div style="flex:1;background:rgba(200,168,75,0.25);border-radius:2px 2px 0 0;height:60%"></div>
+              <div style="flex:1;background:rgba(74,143,255,0.25);border-radius:2px 2px 0 0;height:80%"></div>
+              <div style="flex:1;background:rgba(200,168,75,0.25);border-radius:2px 2px 0 0;height:40%"></div>
+              <div style="flex:1;background:rgba(74,143,255,0.25);border-radius:2px 2px 0 0;height:90%"></div>
+              <div style="flex:1;background:rgba(200,168,75,0.25);border-radius:2px 2px 0 0;height:55%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">CONCEPT — لوحة تحكم SaaS</div>
+        <div class="portfolio-name">Analytics Pro Dashboard</div>
+        <a href="#" class="portfolio-link">عرض النموذج التفاعلي </a>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-visual theme-ecom">
+        <div class="mock-ui">
+          <div class="mock-nav"><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div></div>
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:4px">
+            <div style="background:rgba(155,89,182,0.15);border-radius:4px;aspect-ratio:3/4;display:flex;align-items:flex-end;padding:6px">
+              <div style="width:100%;height:4px;background:rgba(155,89,182,0.4);border-radius:2px"></div>
+            </div>
+            <div style="background:rgba(231,76,60,0.1);border-radius:4px;aspect-ratio:3/4;display:flex;align-items:flex-end;padding:6px">
+              <div style="width:80%;height:4px;background:rgba(231,76,60,0.4);border-radius:2px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">CONCEPT — متجر إلكتروني</div>
+        <div class="portfolio-name">Nova Store — تجربة تسوق فريدة</div>
+        <a href="#" class="portfolio-link">عرض النموذج التفاعلي </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="why-grid">
+    <div class="reveal">
+      <div class="section-tag">WHY VANGUARD</div>
+      <h2 class="section-title">ما الذي يجعلنا مختلفين؟</h2>
+      <p class="section-desc">لسنا مجرد مصممين نضع شاشات جميلة. نحن شركاء نجاح رقميين نفكر بمنطق الأعمال ونصنع تجارب تحوّل الزوار إلى عملاء.</p>
+      <div class="why-numbers">
+        <div class="why-num-box"><div class="why-big">100%</div><div class="why-label">تصاميم مخصصة</div></div>
+        <div class="why-num-box"><div class="why-big">48h</div><div class="why-label">أول عرض أولي</div></div>
+        <div class="why-num-box"><div class="why-big">∞</div><div class="why-label">تعديلات مجانية</div></div>
+        <div class="why-num-box"><div class="why-big">A+</div><div class="why-label">ملفات Figma منظمة</div></div>
+      </div>
+    </div>
+    <div class="why-visual reveal">
+      <div class="why-inner">
+        <div class="why-feature">
+          <div class="why-icon">◈</div>
+          <div>
+            <div class="why-feat-title">فخامة بصرية لا تُنسى</div>
+            <p class="why-feat-desc">تصاميم مخصصة 100% تناسب هوية براندك. لا قوالب مستهلكة، كل مشروع يُعامَل كعمل فني فريد.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="why-icon">⬡</div>
+          <div>
+            <div class="why-feat-title">تسليم منظم — Design System</div>
+            <p class="why-feat-desc">نسلّم ملفات Figma بنظام تصميم كامل يجعل عملية التكويد أسرع بـ60% وبدون أخطاء في التفسير.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="why-icon">✦</div>
+          <div>
+            <div class="why-feat-title">تفكير UX يزيد المبيعات</div>
+            <p class="why-feat-desc">نصمم رحلة المستخدم بعناية لتقليل معدل الارتداد وزيادة معدل التحويل وتجعل التصفح تجربة ممتعة وآمنة.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="why-icon">▲</div>
+          <div>
+            <div class="why-feat-title">شفافية كاملة في التواصل</div>
+            <p class="why-feat-desc">تحديثات منتظمة، نسخ تفاعلية للمراجعة قبل التسليم النهائي، ولا مفاجآت في الأسعار أو المواعيد.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-header reveal" style="text-align:center;margin:0 auto 4rem;">
+    <div class="section-tag" style="justify-content:center">OUR PROCESS</div>
+    <h2 class="section-title">كيف نعمل معاً؟</h2>
+    <p class="section-desc" style="margin:0 auto">أربع مراحل واضحة تضمن لك مشروعاً متكاملاً يتجاوز توقعاتك.</p>
+  </div>
+  <div class="process-timeline reveal">
+    <div class="process-line"></div>
+    <div class="process-step">
+      <div class="step-content">
+        <div class="step-name">الاستكشاف والفهم</div>
+        <p class="step-desc">نبدأ بجلسة مكثفة لفهم فكرتك وأهداف عملك وجمهورك المستهدف والمنافسين.</p>
+        <div class="step-tags"><span class="step-tag">DISCOVERY</span><span class="step-tag">BRIEF</span><span class="step-tag">RESEARCH</span></div>
+      </div>
+      <div class="step-marker">١</div>
+    </div>
+    <div class="process-step">
+      <div class="step-content">
+        <div class="step-name">التخطيط والهيكلة</div>
+        <p class="step-desc">نرسم الهيكل التجريبي لكل صفحة ونضع خريطة رحلة المستخدم قبل لمس أي لون.</p>
+        <div class="step-tags"><span class="step-tag">WIREFRAMES</span><span class="step-tag">USER FLOW</span><span class="step-tag">IA</span></div>
+      </div>
+      <div class="step-marker">٢</div>
+    </div>
+    <div class="process-step">
+      <div class="step-content">
+        <div class="step-name">التصميم البصري الفاخر</div>
+        <p class="step-desc">نضع اللمسة الجمالية الكاملة: الألوان، الخطوط، التباعد، والتفاصيل الدقيقة.</p>
+        <div class="step-tags"><span class="step-tag">UI DESIGN</span><span class="step-tag">TYPOGRAPHY</span><span class="step-tag">BRAND</span></div>
+      </div>
+      <div class="step-marker">٣</div>
+    </div>
+    <div class="process-step">
+      <div class="step-content">
+        <div class="step-name">التفاعل والتسليم</div>
+        <p class="step-desc">نرسل لك نموذجاً تفاعلياً حياً قبل الاعتماد النهائي، ثم نسلّم ملفات Figma منظمة وجاهزة للتكويد.</p>
+        <div class="step-tags"><span class="step-tag">PROTOTYPE</span><span class="step-tag">REVIEW</span><span class="step-tag">HANDOFF</span></div>
+      </div>
+      <div class="step-marker">٤</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header reveal" style="text-align:center;margin:0 auto 4rem;">
+    <div class="section-tag" style="justify-content:center">GET IN TOUCH</div>
+    <h2 class="section-title">ابدأ مشروعك اليوم</h2>
+    <p class="section-desc" style="margin:0 auto">استشارة مجانية لا تلزمك بشيء. أخبرنا عن فكرتك وسنعود إليك خلال 24 ساعة.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="contact-item">
+        <div class="contact-icon">✦</div>
+        <div>
+          <div class="contact-label">البريد الإلكتروني</div>
+          <div class="contact-value">hello@vanguardcode.io</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">◈</div>
+        <div>
+          <div class="contact-label">واتساب / تيليجرام</div>
+          <div class="contact-value">+20 100 000 0000</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">⬡</div>
+        <div>
+          <div class="contact-label">ساعات العمل</div>
+          <div class="contact-value">السبت – الخميس · 10ص – 8م</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">▲</div>
+        <div>
+          <div class="contact-label">متوسط وقت الرد</div>
+          <div class="contact-value">أقل من 4 ساعات عمل</div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form reveal">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">الاسم الكريم</label>
+          <input class="form-input" type="text" placeholder="محمد أحمد" id="fname">
+        </div>
+        <div class="form-group">
+          <label class="form-label">البريد الإلكتروني</label>
+          <input class="form-input" type="email" placeholder="name@company.com" id="femail">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">رابط شركتك الحالية</label>
+          <input class="form-input" type="url" placeholder="www.yoursite.com (اختياري)" id="fsiteurl">
+        </div>
+        <div class="form-group">
+          <label class="form-label">الميزانية المتوقعة</label>
+          <select class="form-select form-input" id="fbudget">
+            <option value="">اختر النطاق</option>
+            <option>أقل من $500</option>
+            <option>$500 – $1,500</option>
+            <option>$1,500 – $3,000</option>
+            <option>$3,000 – $5,000</option>
+            <option>أكثر من $5,000</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">نوع المشروع</label>
+        <select class="form-select form-input" id="ftype">
+          <option value="">اختر نوع المشروع</option>
+          <option>موقع شركة / خدمات</option>
+          <option>متجر إلكتروني</option>
+          <option>تطبيق موبايل</option>
+          <option>لوحة تحكم / SaaS</option>
+          <option>هوية بصرية</option>
+          <option>أخرى</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">تفاصيل المشروع</label>
+        <textarea class="form-textarea" id="fmessage" placeholder="أخبرنا عن فكرتك، جمهورك المستهدف، وأي مرجع تصميمي تحبه..."></textarea>
+      </div>
+      <div class="form-success" id="formSuccess">
+        ✦ &nbsp; شكراً! تم استلام طلبك وسنتواصل معك خلال 24 ساعة.
+      </div>
+      <button class="btn-submit" id="submitBtn">إرسال الطلب ←</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Vanguard Code</div>
+  <div class="footer-copy">© 2025 Vanguard Code. جميع الحقوق محفوظة.</div>
+  <div class="footer-links">
+    <a href="#">سياسة الخصوصية</a>
+    <a href="#">الشروط والأحكام</a>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
